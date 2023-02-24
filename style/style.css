@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+:root {
+    --branco-primaria: #FFFFFF;
+    --cinza-secundaria: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-fundo: #00030C;
+    --fonte-principal: 'inter';
+}
+body {
+    background-color: var(--cor-fundo);
+    color:var(--branco-primaria);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("/assents/Background.png");
+    background-repeat: no-repeat;   
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container__caixa{
+    margin: 0 6em;
+}
+.apresentacao__titulo{
+    font-family: 'inter', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    align-items: center;
+}   
+.container__imagens {
+    margin: 1em 0 2em 0;
+}
+.container__link__assinatura {
+    background-color: var(--botao-azul);
+    color: var(--branco-primaria);
+    text-decoration: none;
+    padding: 1em ;
+    border-radius: 8px;
+    font-family: 'inter', sans-serif;
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 1em;
+}
+.container__link__assinatura__secundario{
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+    display: block;
+    color: var(--branco-primaria);
+    font-family: 'inter', sans-serif;
+    font-size: 1.5rem;
+    height: 24px;
+
+}
+.container__aviso {
+    font-family: 'inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--cinza-secundaria);
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+.descricao__titulo {
+    font-size: 30px;
+    font-family: 'inter' sans-serif;
+    font-weight: 700;
+}
+.descricao__texto {
+    font-size: 16px;
+    color: var(--cinza-secundaria);
+    margin-bottom: 3em;
+}
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+.container__descricao{
+    padding: 2em;
+}
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0 10em 0;
+}
+.dispositivos{
+    text-align: center;
+}
+.dispositivos__titulo{
+    font-size: 48px;
+    color: var(--branco-primaria);
+}
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-primaria);
+}
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 20px;
+    margin-top: 1em;
+}
+.lista__link a{
+    color: var(--branco-primaria);
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 1em;
+}
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+}
+.rodape__texto {
+    padding: 10px;
+    margin: 0 3em;
+    color: var(--cinza-secundaria)
+}
+.lista__link a:hover{
+    color: var(--botao-azul)
+}
